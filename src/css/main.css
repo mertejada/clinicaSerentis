@@ -1,0 +1,88 @@
+/* Fuentes */
+
+
+/* Paleta de colores */
+/* #3295A6 AZUL */
+/* #9CCBD3 AZUL CLARO */
+/* #635B52 MARRON */
+/* #C5C1BE GRIS */
+/* #FEFDFB BLANCO */
+/* #292929 NEGRO */
+
+/* Estilos Generales */
+body {
+    background-color: #FEFDFB;
+    font-family: Montserrat;
+    font-weight: 100;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-family: Poppins,sans-serif;
+    font-weight: 300;  
+}
+
+/*BARRA DE NAVEGACION*/
+.nav-logo {
+    width: 150px;
+    height: auto;
+    margin: 0 2%;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0;
+    
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #292929;
+    transition: all 0.3s ease 0s;
+    padding: 0 10px;
+    margin: 15px;
+
+}
+
+.button{
+    border-radius: 1em;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px;
+}
+
+.blue-button {
+    color: #FEFDFB !important;
+    background-color: #3295A6;
+}
+
+.white-noFill-button{
+    color:#FEFDFB;
+    border: 1px #FEFDFB solid;
+}
+
+
+
+
+
+
+

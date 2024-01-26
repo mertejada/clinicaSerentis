@@ -1,0 +1,25 @@
+.indexIntro{
+    background: url(../img/foto_inicio.png) no-repeat center;
+    background-size: cover;
+    height: 80vh; 
+    width: 100%;
+}
+
+.intro-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 1vh;
+}
+
+
+
