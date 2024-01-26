@@ -3,17 +3,38 @@
     background-size: cover;
     height: 80vh; 
     width: 100%;
+    
 }
 
-.intro-text{
+.intro-info{
     position: relative;
+    width: 50vw;
     top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
 }
+
+.indexSerentis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indexSerentis > *{
+    margin:5%;
+}
+
+.indexSerentis img{
+    width: 30%;
+    border-radius: 10%;
+}
+
+
+
 
 h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: Poppins;
     font-weight: 400;
     color: #FFFFFF;
