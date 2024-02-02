@@ -1,3 +1,11 @@
+h1{
+    font-size: 3rem;
+    font-family: Poppins;
+    font-weight: 400;
+    margin: 0;
+    padding: 1vh;
+}
+
 .indexIntro{
     background: url(../img/foto_inicio.png) no-repeat center;
     background-size: cover;
@@ -8,38 +16,125 @@
 
 .intro-info{
     position: relative;
-    width: 50vw;
     top: 50%;
     margin-left: 5%;
-    margin-bottom: 5%;
     
 }
 
-.indexSerentis{
+.intro-info > *{
+    margin: 10px;
+}
+
+.indexSerentis {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Ajusta el espacio entre los elementos */
+    align-items:center;
 }
 
-.indexSerentis > *{
-    margin:5%;
-}
-
-.indexSerentis img{
+.indexSerentis img {
     width: 30%;
     border-radius: 10%;
 }
 
+#indexSerentis-text {
+    width: 60%;
+    
+}
+
+#indexSerentis-text p{
+    margin-bottom:5%;
+    
+}
+
+#opiniones-seccion{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+#opiniones-seccion:first-child{
+    margin-bottom: 3.5rem;
+}
+
+.opinion{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid #C5C1BE;
+    box-shadow: 0px 0px 10px 0px #C5C1BE;
+    border-radius: 10rem;
+    padding: 1.5rem;
+    margin: 30px;
+}
+
+.opinion-img{
+    width: 80%;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.opinion-text{
+    text-align: left;
+    padding: 30px;
+}
+
+.rrss-title-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.rrss-icons {
+    display: flex;
+    align-items: center;
+}
+
+.rrss-icons img {
+    width: 30px; /* Ajusta el tamaño de los iconos según sea necesario */
+    margin-left: 5px; /* Espacio entre los iconos */
+}
+
+.rrss-img-group {
+    display: grid;
+    width: fit-content;
+    transition: transform 0.5s ease;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rrss-img-group img {
+    width: 100%;
+    object-fit: contain;
+}
 
 
 
-h1{
-    font-size: 4rem;
-    font-family: Poppins;
-    font-weight: 400;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 1vh;
+.partners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.partners img{
+    width: 70%;
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 728px) {
+    .opinion{
+        display: flex;
+        flex-flow: column;
+        border-radius: 50rem;
+    
+    }    
+
+    .opinion p,h4{
+        text-align: center;
+    }
 }
 
 
