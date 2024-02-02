@@ -27,3 +27,5 @@ document.addEventListener("DOMContentLoaded", function () {
         carousel.style.transform = `translateX(${offset}px)`;
     }
 });
+
+

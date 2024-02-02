@@ -10,23 +10,30 @@
       </style>
       
     <link rel="stylesheet" href="/src/css/main.css">
-    <link rel="stylesheet" href="/src/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="/src/css/index.css">    
     
 </head>
 <body>
-    <nav class="navBar">
+    <header>
+        <nav class="navBar">
             <img src="/src/img/logo_brown_nav.png" class="nav-logo" alt="Logo">
-            <section class="nav-links">
-                <a name= "nav-index" href="index.php" >HOME</a>
-                <a name= "nav-laClinica" href="#">LA CLÍNICA</a>
-                <a name= "nav-facial" href="#">FACIAL</a>
-                <a name= "nav-corporal" href="#">CORPORAL</a> 
-                <a name= "nav-capilar" href="src/html/login.html">CAPILAR</a>
-                <a name= "nav-cita" href="#" class="button blue-button">PEDIR CITA</a>
+            <section class="nav-links" id="nav-links">
+                <ul class="nav-list">
+                    <button class="button blue-button cerrar-menu" id="cerrar">Cerrar<i class="fas fa-times"></i></button>
+    
+                    <li><a name="nav-index" href="index.php">HOME</a></li>
+                    <li><a name="nav-laClinica" href="#">LA CLÍNICA</a></li>
+                    <li><a name="nav-facial" href="#">FACIAL</a></li>
+                    <li><a name="nav-corporal" href="#">CORPORAL</a></li>
+                    <li><a name="nav-capilar" href="src/html/login.html">CAPILAR</a></li>
+                    <li><a name="nav-cita" href="#" class="button blue-button">PEDIR CITA</a></li>
+                </ul>
             </section>
-    </nav>
+            <button class="button blue-button abrir-menu" id="abrir">Abrir<i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+    
+    
 
     <section class="indexIntro">
         <section class="intro-info">
@@ -122,7 +129,15 @@
                 </section>
 
                 <section class="rrss-slide">
-                    <img src="/src/img/rrss_3.png" alt="RRSS">
+                    <img src="/src/img/rrss_4.png" alt="RRSS">
+                </section>
+                
+                <section class="rrss-slide">
+                    <img src="/src/img/rrss_5.png" alt="RRSS">
+                </section>
+
+                <section class="rrss-slide">
+                    <img src="/src/img/rrss_6.png" alt="RRSS">
                 </section>
 
             </section>
@@ -203,6 +218,8 @@
         </section>
     </footer>
     <script src="/src/js/main.js"></script>
+    <script src="/src/js/nav.js"></script>
+
     
 </body>
 </html>

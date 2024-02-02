@@ -105,11 +105,17 @@ h1{
     transition: transform 0.5s ease;
     margin: 0; /* Elimina cualquier margen */
     padding: 0; /* Elimina cualquier relleno */
+    
 }
 
 .rrss-slide {
     flex: 0 0 auto;
     margin-right: 0; /* Elimina el margen entre las diapositivas */
+    
+}
+
+.rrss-slide img{
+    width: 400px;
 }
 
 
