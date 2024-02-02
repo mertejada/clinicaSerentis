@@ -11,6 +11,7 @@
       
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
 </head>
@@ -96,20 +97,50 @@
     </section>
     
     <section id="rrss-container">
-        <section class="rrss-title-group">
-            <h2 class="blue text-align-left">Síguenos en nuestras redes sociales</h2>
-            <section class="rrss-icons">
+        <section id="rrss-title-group">
+            <h2 class="blue">Síguenos en redes</h2>
+            <article class="rrss-icons">
                 <a href="#"><img src="/src/img/instagram_icon.png" alt="Instagram"></a>
-                <img src="/src/img/linkedin_icon.png" alt="Facebook">
-                <img src="/src/img/x_icon.png" alt="Twitter">
-            </section>
+                <a href="#"><img src="/src/img/x_icon.png" alt="Twitter"></a>
+                <a href="#"><img src="/src/img/linkedin_icon.png" alt="Linkedin"></a>
+            </article>
         </section>
-        <section class="rrss-img-group">
-            <img src="/src/img/rrss_1.png" alt="RRSS">
-            <img src="/src/img/rrss_2.png" alt="RRSS">
-            <img src="/src/img/rrss_3.png" alt="RRSS">
+    
+        <section class="rrss-carousel-container">
+            <section class="rrss-carousel">
+                
+                <section class="rrss-slide">
+                    <img src="/src/img/rrss_1.png" alt="RRSS">
+                </section>
+
+                <section class="rrss-slide">
+                    <img src="/src/img/rrss_2.png" alt="RRSS">
+                </section>
+
+                <section class="rrss-slide">
+                    <img src="/src/img/rrss_3.png" alt="RRSS">
+                </section>
+
+                <section class="rrss-slide">
+                    <img src="/src/img/rrss_3.png" alt="RRSS">
+                </section>
+
+            </section>
+            <button class="prev">
+                <!-- Flecha izquierda -->
+                <span>&#9664;</span>
+            </button>
+            <button class="next">
+                <!-- Flecha derecha -->
+                <span>&#9654;</span>
+            </button>
         </section>
     </section>
+    
+    
+    
+    
+    
 
     <section class="indexPartners text-align-center">
         <h2 class="blue">Nuestros patrocinadores</h2>
@@ -121,6 +152,7 @@
             <img src="/src/img/partner5.png" alt="Partner">
             <img src="/src/img/partner6.png" alt="Partner">
             <img src="/src/img/partner7.png" alt="Partner">
+            
         </section>
     </section>
 
@@ -170,6 +202,7 @@
             <p>© 2020 Serentis. All rights reserved.</p>
         </section>
     </footer>
+    <script src="/src/js/main.js"></script>
     
 </body>
 </html>

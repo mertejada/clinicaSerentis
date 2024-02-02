@@ -79,34 +79,65 @@ h1{
     padding: 30px;
 }
 
-.rrss-title-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
+#rrss-title-group {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
 
 .rrss-icons {
     display: flex;
-    align-items: center;
+    gap: 20px; /* Espacio entre los íconos */
 }
 
 .rrss-icons img {
-    width: 30px; /* Ajusta el tamaño de los iconos según sea necesario */
-    margin-left: 5px; /* Espacio entre los iconos */
+    width: 50px;
 }
 
-.rrss-img-group {
-    display: grid;
-    width: fit-content;
+.rrss-carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.rrss-carousel {
+    display: flex;
     transition: transform 0.5s ease;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
 }
 
-.rrss-img-group img {
-    width: 100%;
-    object-fit: contain;
+.rrss-slide {
+    flex: 0 0 auto;
+    margin-right: 0; /* Elimina el margen entre las diapositivas */
 }
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff; /* Cambia el color si es necesario */
+    text-shadow: #C5C1BE;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
+
 
 
 
@@ -124,7 +155,7 @@ h1{
 }
 
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 767px) {
     .opinion{
         display: flex;
         flex-flow: column;
@@ -135,7 +166,33 @@ h1{
     .opinion p,h4{
         text-align: center;
     }
+
+    .partners {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .partners img {
+        width: 20%; /* Ajusta el ancho de las imágenes según sea necesario */
+        padding: 20px;
+    }
+
+    .indexSerentis{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .indexSerentis img{
+        width: 50%;
+        margin: 60px;
+    }
+    
 }
+
+/* Media query para tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
 
 
 

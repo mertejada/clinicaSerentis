@@ -196,3 +196,13 @@ h2{
 
 
 
+@media screen and (max-width: 767px) {
+    .footer-elements {
+        flex-direction: column;
+    }
+
+    .footer-elements > section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
