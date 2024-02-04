@@ -7,11 +7,25 @@ h1{
 }
 
 .indexIntro{
-    background: url(../img/foto_inicio.png) no-repeat center;
+    background: url(../img/index/index-900.webp) no-repeat center; /*era la dimension mas grande de la imagen*/
     background-size: cover;
     height: 80vh; 
     width: 100%;
     
+}
+
+/*no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background*/
+
+@media (max-width: 900px) {
+    .indexIntro {
+        background-image: url(../img/index/index-600.webp);
+    }
+}
+
+@media (max-width: 400px) {
+    .indexIntro {
+        background-image: url(../img/index/index-300.webp); 
+    }
 }
 
 .intro-info{
