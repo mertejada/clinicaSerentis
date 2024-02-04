@@ -228,7 +228,7 @@ h2{
         display: block;
         width: 40vw;
         position: fixed;
-        background-color: #fefdfb; /* RGBA con 50% de opacidad */
+        background-color: #fefdfb;
         z-index: 1;
         top: 0;
         right: 0;
@@ -238,7 +238,7 @@ h2{
     }
 
     .open-menu {
-        display: block; /* Aparece en dispositivos móviles */
+        display: block; 
     }
 
     .nav-list {
