@@ -1,7 +1,7 @@
-/* Fuentes */
 
 
-/* Paleta de colores */
+/* COLORES */
+
 /* #3295A6 AZUL */
 .blue{
     color: #3295A6;
@@ -27,7 +27,7 @@
     color: #292929;
 }
 
-/* Estilos Generales */
+/* ESTILOS GENERALES */
 body {
     background-color: #FEFDFB;
     font-family: Montserrat;
@@ -111,6 +111,30 @@ h2{
     flex-direction: row;
 }
 
+
+.menu-icon {
+    scale: 2;
+    margin: 20px;
+    color: #292929; 
+    background-color: transparent;
+    border: none;
+    display: none;
+    align-self: center;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
 /*FOOTER*/
 
 .footer {
@@ -128,16 +152,11 @@ h2{
 }
 
 .footer-logos img{
-    width: 100px; /* Ajusta el tamaño de los iconos según sea necesario */
+    width: 100px; 
 }
 
 .footer-social img{
     width: 50px;
-}
-
-
-.footer-social a:not(:last-child) {
-    margin-right: 10px; /* Espacio entre los iconos sociales */
 }
 
 .footer-elements {
@@ -165,7 +184,7 @@ h2{
     text-decoration: none;
 }
 
-/* */
+/* BOTONES */
 .blue-button,
 .white-noFill-button,
 .blue-noFill-button{
@@ -190,10 +209,7 @@ h2{
     border: 2px #3295A6 solid;
 }
 
-.circle{
-    border-radius: 50%;
-}
-
+/*TEXTO*/
 .text-align-left{
     text-align: left;
 }
@@ -202,28 +218,6 @@ h2{
     text-align: center;
 }
 
-.menu-icon {
-    scale: 2;
-    margin: 20px;
-    color: #292929; 
-    background-color: transparent;
-    border: none;
-    display: none;
-    align-self: center;
-}
-
-.menu-icon:hover {
-    transform: scale(1.1);
-}
-
-
-.abrir-menu {
-    display: none;
-}
-
-.cerrar-menu {
-    display: none;
-}
 
 @media screen and (max-width: 1024px) {
     .nav-links {
@@ -243,7 +237,7 @@ h2{
         box-shadow: #2929297d 0px 0px 5px;
     }
 
-    .abrir-menu {
+    .open-menu {
         display: block; /* Aparece en dispositivos móviles */
     }
 

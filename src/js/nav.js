@@ -1,16 +1,17 @@
 const nav = document.querySelector("#nav-links");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+const open = document.querySelector("#abrir");
+const close = document.querySelector("#cerrar");
 
-abrir.addEventListener("click", () => { // al hacer click en abrir
-    abrir.style.display = "none"; // el boton de abrir desaparece
-    cerrar.style.display = "inline-block"; //aparece el boton cerrar
+open.addEventListener("click", () => { // al hacer click en abrir
+    nav.classList.add("visible"); // hacemos que el menú sea visible
+    open.style.display = "none"; // el boton de abrir desaparece
+    close.style.display = "inline-block"; //aparece el boton cerrar
 }); 
 
-cerrar.addEventListener("click", () => { //al contrario
+close.addEventListener("click", () => { //al contrario
     nav.classList.remove("visible"); // el menu desaparece
-    abrir.style.display = "inline-block";
-    cerrar.style.display = "none";
+    open.style.display = "inline-block";
+    close.style.display = "none";
 });
 
 
@@ -18,18 +19,18 @@ cerrar.addEventListener("click", () => { //al contrario
 window.addEventListener("resize", () => { 
     if (window.innerWidth > 1024) {
         nav.classList.remove("visible");
-        abrir.style.display = "none";
-        cerrar.style.display = "none";
+        open.style.display = "none";
+        close.style.display = "none";
     } else {
-        abrir.style.display = "block";
-        cerrar.style.display = "block";
+        open.style.display = "block";
+        close.style.display = "block";
     }
 });
 
 if (window.innerWidth > 1024) {
-    abrir.style.display = "none";
-    cerrar.style.display = "none";
+    open.style.display = "none";
+    close.style.display = "none";
 } else {
-    abrir.style.display = "inline-block";
-    cerrar.style.display = "none";
+    open.style.display = "inline-block";
+    close.style.display = "none";
 }
