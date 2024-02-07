@@ -9,7 +9,7 @@ h1{
 /*INTRODUCCION*/
 
 .indexIntro{
-    background: url(../img/index/index-900.webp) no-repeat center; /*era la dimension mas grande de la imagen*/
+    background: url(../../img/index/index-900.webp) no-repeat center; /*era la dimension mas grande de la imagen*/
     background-size: cover;
     height: 80vh; 
     width: 100%;
@@ -199,13 +199,13 @@ h1{
 
 @media (max-width: 900px) {
     .indexIntro {
-        background-image: url(../img/index/index-600.webp);
+        background-image: url(../../img/index/index-600.webp);
     }
 }
 
 @media (max-width: 400px) {
     .indexIntro {
-        background-image: url(../img/index/index-300.webp); 
+        background-image: url(../../img/index/index-300.webp); 
     }
 }
 

@@ -1,0 +1,23 @@
+{
+  "name": "clinicaserentis",
+  "version": "1.0.0",
+  "description": "ENLACE AL REPOSITORIO DE GITHUB:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "find src/js -name '*.js' -exec ./node_modules/.bin/jsdoc {} -d docs \\;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mertejada/clinicaSerentis.git"
+  },
+  "author": "Mercedes Tejada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mertejada/clinicaSerentis/issues"
+  },
+  "homepage": "https://github.com/mertejada/clinicaSerentis#readme",
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
+}
