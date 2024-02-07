@@ -2,10 +2,6 @@
 
 //Carousel
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    
-});*/
-
 const carousel = document.querySelector('.rrss-carousel');
     const moves = document.querySelectorAll('.rrss-slide');
     const prev = document.querySelector('.prev');
