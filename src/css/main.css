@@ -65,125 +65,8 @@ h2{
     font-family: Poppins,sans-serif;
     font-weight: 600;
     font-size: 2.1rem;
-
 }
 
-/*BARRA DE NAVEGACION*/
-.nav-logo {
-    width: 150px;
-    height: auto;
-    margin: 0 2%;
-}
-
-.navBar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items:end;
-}
-
-
-
-.nav-links a {
-    text-decoration: none;
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #292929;
-    transition: all 0.3s ease 0s;
-    padding: 0 10px;
-    margin: 15px;
-}
-
-.nav-links a:hover{
-    color: #3295A6;
-    }
-
-
-.nav-links a::after{
-    
-    transition: transform 0.3s ease;
-}
-
-
-.nav-list{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-
-.menu-icon {
-    scale: 2;
-    margin: 20px;
-    color: #292929; 
-    background-color: transparent;
-    border: none;
-    display: none;
-    align-self: center;
-}
-
-.menu-icon:hover {
-    transform: scale(1.1);
-}
-
-
-.open-menu {
-    display: none;
-}
-
-.close-menu {
-    display: none;
-}
-
-/*FOOTER*/
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px;
-    
-}
-
-.footer-logos {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    border-bottom: 0.5px solid #FEFDFB;
-}
-
-.footer-logos img{
-    width: 100px; 
-}
-
-.footer-social img{
-    width: 50px;
-}
-
-.footer-elements {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.footer-elements > div {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.footer-elements h3 {
-    margin-bottom: 10px;
-}
-
-.footer-elements ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-elements a {
-    color: #fff;
-    text-decoration: none;
-}
 
 /* BOTONES */
 .blue-button,
@@ -198,6 +81,12 @@ h2{
 .blue-button {
     color: #FEFDFB !important;
     background-color: #3295A6;
+}
+
+.blue-button:hover {
+    background-color: #7e736f;
+    color: #FEFDFB !important;
+    transition:cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
 .white-noFill-button{
@@ -220,43 +109,8 @@ h2{
 }
 
 
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .nav-links.visible {
-        display: block;
-        width: 40vw;
-        position: fixed;
-        background-color: #fefdfb;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        height: 100vw;
-        border-radius: 0 0 0 10px;
-        box-shadow: #2929297d 0px 0px 5px;
-    }
 
-    .open-menu {
-        display: block; 
-    }
 
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer-elements{
-        gap: 2;
-        flex-direction: column;
-
-    }
-    
-}
 
 
 
