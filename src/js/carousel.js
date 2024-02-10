@@ -21,7 +21,7 @@ const carousel = document.querySelector('.rrss-carousel');
 
     next.addEventListener('click', () => { // cuando se hace click en el boton de ir a la imagen siguiente
         if(window.innerWidth < 1024){
-            if (i < totalMoves - 1) { // si el contador es menor al numero total de imagenes - 1  (asi no se queda en blanco al pasar la ultima imagen)
+            if (i < totalMoves - 2) { // si el contador es menor al numero total de imagenes - 1  (asi no se queda en blanco al pasar la ultima imagen)
                 i++; // se le suma 1 al contador, osea que se va a la imagen siguiente
                 updateCarousel(); // se actualiza el carrusel
             }

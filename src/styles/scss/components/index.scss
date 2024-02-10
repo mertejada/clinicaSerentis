@@ -1,0 +1,152 @@
+/* INTRODUCCION */
+
+.indexIntro {
+    background: url(../../../img/index/index-900.webp) no-repeat center; // era la dimension mas grande de la imagen
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+  
+    .intro-info {
+      position: relative;
+      top: 50%;
+      margin-left: 5%;
+  
+      > * {
+        margin: 10px;
+      }
+    }
+  }
+  
+  /* SERENTIS */
+  .indexSerentis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    img {
+      width: 30%;
+      border-radius: 10%;
+    }
+  
+    #indexSerentis-text {
+      width: 60%;
+  
+      p {
+        margin-bottom: 5%;
+      }
+    }
+  }
+  
+  /* OPINIONES */
+  #opiniones-seccion {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  
+    &:first-child {
+      margin-bottom: 3.5rem;
+    }
+  
+    .opinion {
+      display: grid;
+      width: fit-content;
+      grid-template-columns: 1fr 2fr;
+      border: 1px solid #C5C1BE;
+      box-shadow: 0px 0px 10px 0px #C5C1BE;
+      border-radius: 10rem;
+      padding: 1.5rem;
+      margin: 30px;
+  
+      .opinion-img {
+        width: 80%;
+        border-radius: 50%;
+        align-self: center;
+      }
+  
+      .opinion-text {
+        text-align: left;
+        padding: 30px;
+      }
+    }
+  }
+  
+  /* REDES SOCIALES */
+  #rrss-title-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .rrss-icons {
+      display: flex;
+      gap: 20px;
+  
+      img {
+        width: 50px;
+      }
+    }
+  
+    
+      
+  }
+  
+  /* PARTNERS */
+  .partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 30px;
+  
+    img {
+      width: 70%;
+      margin: 20px;
+    }
+  }
+  
+  /* MEDIA QUERIES */
+  @media screen and (max-width: 767px) {
+    .opinion {
+      display: flex;
+      flex-flow: column;
+      border-radius: 50rem;
+  
+      p,
+      h4 {
+        text-align: center;
+      }
+    }
+  
+    .partners {
+      grid-template-columns: 1fr;
+  
+      img {
+        width: 20%;
+        padding: 20px;
+      }
+    }
+  
+    .indexSerentis {
+      flex-flow: column;
+      align-items: center;
+  
+      img {
+        width: 50%;
+        margin: 60px;
+      }
+    }
+  }
+  
+  /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
+  @media (max-width: 900px) {
+    .indexIntro {
+      background-image: url(../../../img/index/index-600.webp);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .indexIntro {
+      background-image: url(../../../img/index/index-300.webp);
+    }
+  }
+  

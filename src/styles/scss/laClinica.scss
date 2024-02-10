@@ -1,0 +1,21 @@
+$bk-img : url('../../img/laClinica.webp');
+
+.clinica-intro{
+    background: $bk-img no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .intro-info {
+        padding: 50px;
+        width: 50%;
+        height: fit-content;
+
+
+        > * {
+            margin: 10px;
+        }
+    }
+}

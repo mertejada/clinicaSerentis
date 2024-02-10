@@ -1,207 +1,191 @@
-/*INTRODUCCION*/
-
-.indexIntro{
-    background: url(../../img/index/index-900.webp) no-repeat center; /*era la dimension mas grande de la imagen*/
-    background-size: cover;
-    height: 80vh; 
-    width: 100%;
-    
+/* INTRODUCCION */
+.indexIntro {
+  background: url(../../img/index/index-900.webp) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
-
-.intro-info{
-    position: relative;
-    top: 50%;
-    margin-left: 5%;
-    
+.indexIntro .intro-info {
+  position: relative;
+  top: 50%;
+  margin-left: 5%;
 }
-
-.intro-info > *{
-    margin: 10px;
+.indexIntro .intro-info > * {
+  margin: 10px;
 }
 
 /* SERENTIS */
 .indexSerentis {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .indexSerentis img {
-    width: 30%;
-    border-radius: 10%;
+  width: 30%;
+  border-radius: 10%;
+}
+.indexSerentis #indexSerentis-text {
+  width: 60%;
+}
+.indexSerentis #indexSerentis-text p {
+  margin-bottom: 5%;
 }
 
-#indexSerentis-text {
-    width: 60%;
-    
+/* OPINIONES */
+#opiniones-seccion {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+#opiniones-seccion:first-child {
+  margin-bottom: 3.5rem;
+}
+#opiniones-seccion .opinion {
+  display: grid;
+  width: -moz-fit-content;
+  width: fit-content;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid #C5C1BE;
+  box-shadow: 0px 0px 10px 0px #C5C1BE;
+  border-radius: 10rem;
+  padding: 1.5rem;
+  margin: 30px;
+}
+#opiniones-seccion .opinion .opinion-img {
+  width: 80%;
+  border-radius: 50%;
+  align-self: center;
+}
+#opiniones-seccion .opinion .opinion-text {
+  text-align: left;
+  padding: 30px;
 }
 
-#indexSerentis-text p{
-    margin-bottom:5%;
-    
-}
-
-/*OPINIONES*/
-#opiniones-seccion{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-}
-
-#opiniones-seccion:first-child{
-    margin-bottom: 3.5rem;
-}
-
-.opinion{
-    display: grid;
-    width: fit-content;
-    grid-template-columns: 1fr 2fr;
-    border: 1px solid #C5C1BE;
-    box-shadow: 0px 0px 10px 0px #C5C1BE;
-    border-radius: 10rem;
-    padding: 1.5rem;
-    margin: 30px;
-}
-
-.opinion-img{
-    width: 80%;
-    border-radius: 50%;
-    align-self: center;
-}
-
-.opinion-text{
-    text-align: left;
-    padding: 30px;
-}
-
-/*REDES SOCIALES*/
+/* REDES SOCIALES */
 #rrss-title-group {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.rrss-icons {
-    display: flex;
-    gap: 20px; 
+#rrss-title-group .rrss-icons {
+  display: flex;
+  gap: 20px;
 }
-
-.rrss-icons img {
-    width: 50px;
+#rrss-title-group .rrss-icons img {
+  width: 50px;
 }
-
 .rrss-carousel-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .rrss-carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    margin: 0; 
-    padding: 0;
-    
+  display: flex;
+  transition: transform 0.5s ease;
+  margin: 0; 
+  padding: 0;
+  
 }
 
 .rrss-slide {
-    flex: 0 0 auto;
-    margin-right: 0;
-    
+  flex: 0 0 auto;
+  margin-right: 0;
+  
 }
 
 .rrss-slide img{
-    width: 400px;
+  width: 400px;
 }
 
 /*CARRUSEL DE REDES*/
 .prev,
 .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #ffffff; 
-    text-shadow: #C5C1BE;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ffffff; 
+  text-shadow: #C5C1BE;
 }
 
 .prev {
-    left: 10px;
+  left: 10px;
 }
 
 .next {
-    right: 10px;
+  right: 10px;
 }
 
 
 /*PARTNERS*/
 .partners{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 30px;
 }
 
 .partners img{
-    width: 70%;
-    margin: 20px;
+  width: 70%;
+  margin: 20px;
 }
 
-/*MEDIA QUERIES*/
+
+/* PARTNERS */
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 30px;
+}
+.partners img {
+  width: 70%;
+  margin: 20px;
+}
+
+
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
-    .opinion{
-        display: flex;
-        flex-flow: column;
-        border-radius: 50rem;
-    
-    }    
-
-    .opinion p,h4{
-        text-align: center;
-    }
-
-    .partners {
-        grid-template-columns: 1fr;
-        
-    }
-
-    .partners img {
-        width: 20%; 
-        padding: 20px;
-    }
-
-    .indexSerentis{
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .indexSerentis img{
-        width: 50%;
-        margin: 60px;
-    }
-    
+  .opinion {
+    display: flex;
+    flex-flow: column;
+    border-radius: 50rem;
+  }
+  .opinion p,
+  .opinion h4 {
+    text-align: center;
+  }
+  .partners {
+    grid-template-columns: 1fr;
+  }
+  .partners img {
+    width: 20%;
+    padding: 20px;
+  }
+  .indexSerentis {
+    flex-flow: column;
+    align-items: center;
+  }
+  .indexSerentis img {
+    width: 50%;
+    margin: 60px;
+  }
 }
-
-
-
-/*no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background*/
-
+/* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
 @media (max-width: 900px) {
-    .indexIntro {
-        background-image: url(../../img/index/index-600.webp);
-    }
+  .indexIntro {
+    background-image: url(../../img/index/index-600.webp);
+  }
 }
-
 @media (max-width: 400px) {
-    .indexIntro {
-        background-image: url(../../img/index/index-300.webp); 
-    }
-}
-
-
-
-
+  .indexIntro {
+    background-image: url(../../img/index/index-300.webp);
+  }
+}/*# sourceMappingURL=index.css.map */

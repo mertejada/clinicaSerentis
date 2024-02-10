@@ -1,0 +1,17 @@
+.clinica-intro {
+  background: url("../../img/laClinica.webp") no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.clinica-intro .intro-info {
+  padding: 50px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.clinica-intro .intro-info > * {
+  margin: 10px;
+}/*# sourceMappingURL=laClinica.css.map */
