@@ -14,4 +14,34 @@
 }
 .clinica-intro .intro-info > * {
   margin: 10px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+.values-container .value {
+  width: 250px;
+  margin: 20px;
+}
+
+.about-text {
+  padding: 100px;
+  font-size: 1.2rem;
+}
+
+#about-history {
+  background: url("../../img/about-history.webp") no-repeat center;
+}
+
+#about-team {
+  background: url("../../img/about-team.webp") no-repeat center;
+  text-align: right;
+}
+
+#about-philosophy {
+  background: url("../../img/about-philosophy.webp") no-repeat center;
 }/*# sourceMappingURL=laClinica.css.map */

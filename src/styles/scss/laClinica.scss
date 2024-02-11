@@ -1,4 +1,7 @@
 $bk-img : url('../../img/laClinica.webp');
+$team-img : url('../../img/about-team.webp');
+$philosophy-img : url('../../img/about-philosophy.webp');
+$history-img : url('../../img/about-history.webp');
 
 .clinica-intro{
     background: $bk-img no-repeat center;
@@ -6,7 +9,7 @@ $bk-img : url('../../img/laClinica.webp');
     height: 80vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center; 
 
     .intro-info {
         padding: 50px;
@@ -19,3 +22,36 @@ $bk-img : url('../../img/laClinica.webp');
         }
     }
 }
+
+.values-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+
+    .value{
+        width: 250px;
+        margin: 20px;
+    }
+}
+
+.about-text{
+    padding: 100px;
+    font-size: 1.2rem;
+}
+
+#about-history{
+    background: $history-img no-repeat center;
+}
+
+#about-team{
+    background: $team-img no-repeat center;
+    text-align: right;
+}
+
+#about-philosophy{
+    background: $philosophy-img no-repeat center;
+}
+
+
