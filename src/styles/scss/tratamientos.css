@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.tratamientos-intro {
+  /*background: url('../../img/tratamientos.webp') no-repeat center;*/
+  text-align: center;
+}
+.tratamientos-intro .intro-info {
+  padding: 60px;
+}
+
+.tratamiento {
+  width: 300px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+.tratamiento .tratamiento-title {
+  background: url("../../img/tratamientos.webp") no-repeat center;
+  border-radius: 50px;
+  width: 100%;
+  background-size: cover; /* Esto hará que la imagen cubra todo el contenedor */
+  border: 1px solid rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.tratamiento h2 {
+  color: white;
+  font-size: 3em;
+  padding: 10px;
+  text-align: center;
+}/*# sourceMappingURL=tratamientos.css.map */
