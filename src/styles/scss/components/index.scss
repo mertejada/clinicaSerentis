@@ -22,6 +22,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    margin-left: 5%;
   
     img {
       width: 30%;
@@ -105,44 +107,52 @@
   }
   
   /* MEDIA QUERIES */
-  @media screen and (max-width: 767px) {
-    .opinion {
-      display: flex;
-      flex-flow: column;
-      border-radius: 50rem;
-  
-      p,
-      h4 {
-        text-align: center;
-      }
-    }
-  
-    .partners {
-      grid-template-columns: 1fr;
-  
-      img {
-        width: 20%;
-        padding: 20px;
-      }
-    }
-  
-    .indexSerentis {
-      flex-flow: column;
+
+
+@media screen and (min-width: 1550px) {
+    #opiniones-seccion .opinion {
+      border-radius: 500px;
       align-items: center;
-  
-      img {
-        width: 50%;
-        margin: 60px;
-      }
     }
-  }
+
+      #opiniones-seccion .opinion .opinion-text {
+        padding: 50px;
+        margin: 50px;
+        
+      }
+
+      //que el index tenga todo mucho mas grande
+      .indexIntro h1{
+        font-size: 7rem;
+      }
+
+}
+
+  @media screen and (max-width: 800px) {
+    #opiniones-seccion .opinion {
+        display: flex;
+        flex-direction: column;
+        border-radius: 300px;
+        height: 800px;
+        justify-content: space-evenly;
+    }
+
+    #opiniones-seccion .opinion .opinion-img {
+        width: 80%;
+        border-radius: 50%;
+        align-self: center;
+    }
+
+    #opiniones-seccion .opinion .opinion-text {
+        text-align: center;
+        padding: 30px;
+        margin: 30px;
+    }
+}
+
   
   /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
-  @media (max-width: 900px) {
-    .indexIntro {
-      background-image: url(../../../img/index/index-600.webp);
-    }
-  }
+  
   
   @media (max-width: 400px) {
     .indexIntro {

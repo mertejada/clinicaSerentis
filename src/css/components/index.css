@@ -153,8 +153,9 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
-  .opinion {
+  #opiniones-seccion .opinion {
     display: flex;
+    height: 200%;
     flex-flow: column;
     border-radius: 50rem;
   }
@@ -170,12 +171,17 @@
     padding: 20px;
   }
   .indexSerentis {
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
   }
   .indexSerentis img {
     width: 50%;
     margin: 60px;
+  }
+
+  #rrss-title-group {
+    justify-content: space-between;
+    text-align: left;
   }
 }
 /* no se si esta bien pero tuve que hacerlo en el css porque tenia la imagen como background */
@@ -183,9 +189,11 @@
   .indexIntro {
     background-image: url(../../img/index/index-600.webp);
   }
+
 }
 @media (max-width: 400px) {
   .indexIntro {
     background-image: url(../../img/index/index-300.webp);
   }
 }/*# sourceMappingURL=index.css.map */
+

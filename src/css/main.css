@@ -113,9 +113,25 @@ h2{
     font-weight: 600;
 }
 
+@media screen and (min-width: 1550px){
+    
+    #contenido{
+        margin: 5%;
+        font-size: 1.8em;
+    }
 
+    h1, h2{
+        font-size: 4rem;
+    }
 
+    .blue-button,
+    .white-noFill-button,
+    .blue-noFill-button, a{
+        height: 50px;
+        padding: 15px;
+        font-size: 1.2em;
+    }
 
-
+}
 
 

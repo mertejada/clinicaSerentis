@@ -1,0 +1,37 @@
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background: url('../../img/cita.webp') no-repeat center;
+    background-size: cover;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+
+    form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+
+        input, textarea{
+            width: 50%;
+            height: 30px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 40px;
+            background-color: #ffffff94;
+        }
+        
+    }
+    
+}
